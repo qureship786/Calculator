@@ -436,6 +436,14 @@ Unicode: U+00F7, UTF-8: C3 B7</string>
                         <outletCollection property="numberButtons" destination="Ig0-Yy-2ro" collectionClass="NSMutableArray" id="tHO-xr-6ky"/>
                         <outletCollection property="numberButtons" destination="8eN-UT-UqH" collectionClass="NSMutableArray" id="VhZ-bM-vK2"/>
                         <outletCollection property="numberButtons" destination="OsH-J0-nEH" collectionClass="NSMutableArray" id="k2m-lU-HOl"/>
+                        <outletCollection property="operationButtons" destination="UUE-Ii-e9i" collectionClass="NSMutableArray" id="7Zi-1F-b5e"/>
+                        <outletCollection property="operationButtons" destination="juq-bP-5ui" collectionClass="NSMutableArray" id="cJi-1h-IeN"/>
+                        <outletCollection property="operationButtons" destination="SML-I9-1hZ" collectionClass="NSMutableArray" id="VBd-HA-1Qa"/>
+                        <outletCollection property="operationButtons" destination="BR4-PT-wcx" collectionClass="NSMutableArray" id="cE8-c9-g5r"/>
+                        <outletCollection property="operationButtons" destination="elW-1j-fbI" collectionClass="NSMutableArray" id="Ni8-tx-2Lw"/>
+                        <outletCollection property="operationButtons" destination="eXl-fa-RMB" collectionClass="NSMutableArray" id="4km-yz-LZn"/>
+                        <outletCollection property="operationButtons" destination="gVV-de-lEK" collectionClass="NSMutableArray" id="Od0-sT-KA0"/>
+                        <outletCollection property="operationButtons" destination="6KK-dj-t3g" collectionClass="NSMutableArray" id="wbe-S8-K7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

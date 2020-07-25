@@ -11,12 +11,27 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var lblResult: UILabel!
     @IBOutlet var numberButtons: [UIButton]!
+    @IBOutlet var operationButtons: [UIButton]!
     var calc: Calculator = Calculator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         calc.delegate = self
+        
+        configureUI()
+    }
+    func configureUI() {
+        for aButton in numberButtons {
+            aButton.setBackgroundColor(color: .white, forState: .highlighted)
+            aButton.setTitleColor(.black, for: .highlighted)
+            aButton.layer.masksToBounds = true
+        }
+        for aButton in operationButtons {
+            aButton.setBackgroundColor(color: .white, forState: .highlighted)
+            aButton.setTitleColor(.black, for: .highlighted)
+            aButton.layer.masksToBounds = true
+        }
     }
     @IBAction func numberButtonClicked(sender: Any) {
         if let button = sender as? UIButton {

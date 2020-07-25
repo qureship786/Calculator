@@ -15,6 +15,7 @@
 		CDC8515224C07FD3007F55BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC8515024C07FD3007F55BF /* Main.storyboard */; };
 		CDC8515424C07FD4007F55BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC8515324C07FD4007F55BF /* Assets.xcassets */; };
 		CDC8515724C07FD4007F55BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC8515524C07FD4007F55BF /* LaunchScreen.storyboard */; };
+		CDEF370024CC53A400C4B98E /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF36FF24CC53A400C4B98E /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CDC8515324C07FD4007F55BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC8515624C07FD4007F55BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC8515824C07FD4007F55BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEF36FF24CC53A400C4B98E /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		CDC8514924C07FD3007F55BF /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CDEF36FF24CC53A400C4B98E /* UIButton+Extension.swift */,
 				CD45806124CAA4F100A02DD3 /* Views */,
 				CD45805C24CAA45000A02DD3 /* ViewModel */,
 				CDC8514A24C07FD3007F55BF /* AppDelegate.swift */,
@@ -165,6 +168,7 @@
 				CD45806024CAA45000A02DD3 /* CalculationViewModel.swift in Sources */,
 				CDC8514B24C07FD3007F55BF /* AppDelegate.swift in Sources */,
 				CDC8514D24C07FD3007F55BF /* SceneDelegate.swift in Sources */,
+				CDEF370024CC53A400C4B98E /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
