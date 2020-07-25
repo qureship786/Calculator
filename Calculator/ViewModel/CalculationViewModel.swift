@@ -58,7 +58,7 @@ class Calculator {
             }
             
         } else {
-            shareResponse(content: String(result))
+            shareResponse(content: result.removeZero)
         }
     }
     func reset() {
@@ -85,13 +85,17 @@ class Calculator {
             processResponse(result: result)
             reset()
         case .Negation:
-            let result = -firstOperandNumber
+            if !firstOperand.contains("-"){
+                firstOperand = "-" + firstOperand
+            } else {
+                firstOperand = firstOperand.replacingOccurrences(of: "-", with: "")
+            }
+            let result = firstOperandNumber
             processResponse(result: result)
-            reset()
         case .Percentage:
             let result = firstOperandNumber / 100
+            firstOperand = String(result)
             processResponse(result: result)
-            reset()
         default:
             print("Default")
         }
@@ -114,6 +118,7 @@ class Calculator {
                     performCalculation()
                 case .Percentage:
                     currentCalculationOperation = .Percentage
+                    performCalculation()
                 case .Plus:
                     currentCalculationOperation = .Plus
             }
@@ -126,3 +131,13 @@ class Calculator {
         self.delegate?.updateResult(content: "0")
     }
 }
+
+extension Double {
+    var removeZero:String {
+        let nf = NumberFormatter()
+        nf.minimumFractionDigits = 0
+        nf.maximumFractionDigits = 5
+        return nf.string(from: NSNumber(value: self))!
+    }
+}
+
